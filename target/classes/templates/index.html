@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Immobilien Scout24</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" />
+<link th:href="@{/css/layout.css}" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="appname">IMMOBILIEN SCOUT24 TECH CHALLENGE</div>
+	<div class="form">
+		<form id="URL-form" method="get">
+			Enter the URL: <input type="text" size="30" id="url" name="url"
+				required="required" /> <input type="submit" value="Check Status"
+				id="submiturl" />
+		</form>
+	</div>
+	<div class="error" id="error-div"></div>
+	<div id="url-result-table" style = "display: none;">
+    <div class="note"> I-Links = Internal Domain Links, E-Links = External Domain Links</div>
+	<div>
+		<table>
+				<tr>
+					<td width = "30%" >URL</td>
+					<td width = "15%">HTML Version</td>
+					<td>Page Title</td>
+					<td width = "8%">Heading count</td>
+					<td width = "10%">Link Count</td>
+					<td width = "8%">IsLoginForm ?</td>
+				</tr>
+			<tbody id="urlinfobody"></tbody>
+		</table>
+	</div>
+	</div>
+	<div> </div>
+	<p></p>
+	
+	<div id="link-table" style = "display: none;">
+		<table>
+				<tr>
+					<td width = "30%" text-align= "left">URL</td>
+					<td width = "15%">Is Reachable?</td>
+					<td> URL Info(Status code, Status message)</td>
+					<td width = "8%">Navigate</td>
+				</tr>
+			<tbody id="urlstatebody"></tbody>
+		</table>
+	</div>
+	<script type="text/javascript" th:src="@{/webjars/jquery/2.2.4/jquery.min.js}" ></script>
+
+	<script type="text/javascript" th:src="@{/js/main.js}" ></script>
+
+</body>
+</html>

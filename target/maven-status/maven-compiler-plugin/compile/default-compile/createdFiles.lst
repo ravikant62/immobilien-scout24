@@ -1,0 +1,9 @@
+com/scout24/tech/challenge/controller/ImmobilienScout24Controller.class
+com/scout24/tech/challenge/exception/URLException.class
+com/scout24/tech/challenge/model/UrlState.class
+com/scout24/tech/challenge/model/Heading.class
+com/scout24/tech/challenge/parser/Parser.class
+com/scout24/tech/challenge/model/PageInfoModel.class
+com/scout24/tech/challenge/ImmobilienScout24.class
+com/scout24/tech/challenge/exception/HttpExceptionhandler$HttpErrorResponseBody.class
+com/scout24/tech/challenge/exception/HttpExceptionhandler.class
